@@ -1,18 +1,9 @@
-<html>
-  <title>WURFL Lite - Phone Information</title>
-  <body>
-    <h1>WURFL Lite - Phone Information</h1>
-    <p>This site uses <a href="http://www.darkarts.co.za/wurfl-lite-middleware">WURFL Lite Rack Middleware</a> to detect the following information:</p>
-    <table>
-      <tr><th>Brand Name</th><td><%= @phone.brand_name %></td></tr>
-      <tr><th>Model Name</th><td><%= @phone.model_name %></td></tr>
-      <tr><th>Operating System</th><td><%= @phone.device_os %></td></tr>
-      <tr><th>XHTML Support Level</th><td><%= @phone.xhtml_support_level %></td></tr>
-      <tr><th>Preferred Markup</th><td><%= @phone.preferred_markup %></td></tr>
-      <tr><th>Pointing Method</th><td><%= @phone.pointing_method %></td></tr>
-    </table>
-    <p>The full phone data dump can be <a href="/dump">viewed here</a></p>
-    <p>Try this site on another phone by browsing to <a href="http://bit.ly/wurfl-lite">http://bit.ly/wurfl-lite</a> or using by scanning the following:</p>
-    <img src="http://bit.ly/dSLAW1.qrcode"/>
-  </body>
-</html>
+<table>
+  <tr><th>Brand Name</th><td><%= @phone.brand_name %></td></tr>
+  <tr><th>Model Name</th><td><%= @phone.model_name %></td></tr>
+  <tr><th>Operating System</th><td><%= @phone.device_os %></td></tr>
+  <tr><th>XHTML Support Level</th><td><%= @phone.xhtml_support_level %></td></tr>
+  <tr><th>Preferred Markup</th><td><%= @phone.preferred_markup %></td></tr>
+  <tr><th>Pointing Method</th><td><%= @phone.pointing_method %></td></tr>
+</table>
+<p>The full phone data dump can be <a href="/dump">viewed here</a></p>

@@ -5,7 +5,7 @@ before do
 end
 
 get '/' do
-  erb :show_phone_information
+  erb @phone ? :show_phone_information : :not_a_phone
 end
 
 get '/dump' do
