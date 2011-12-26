@@ -2,45 +2,51 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.6)
-    amatch (0.2.7)
-      spruz (~> 0.2)
-    daemons (1.1.0)
+    amatch (0.2.9)
+      tins (~> 0.3)
+    daemons (1.1.5)
     eventmachine (0.12.10)
-    heroku (2.6.1)
+    heroku (2.17.0)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
       term-ansicolor (~> 1.0.5)
-    hpricot (0.8.4)
+    hpricot (0.8.5)
     launchy (2.0.5)
       addressable (~> 2.2.6)
-    mime-types (1.16)
-    rack (1.3.2)
+    mime-types (1.17.2)
+    rack (1.3.5)
+    rack-protection (1.1.4)
+      rack
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rubyzip (0.9.4)
-    sinatra (1.1.2)
-      rack (~> 1.1)
-      tilt (~> 1.2)
-    spruz (0.2.13)
-    term-ansicolor (1.0.6)
-    thin (1.2.7)
+    rubyzip (0.9.5)
+    shotgun (0.8)
+      rack (>= 1.0)
+    sinatra (1.3.1)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    term-ansicolor (1.0.7)
+    thin (1.3.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    tilt (1.2.2)
-    wurfl-lite (1.1.1)
+    tilt (1.3.3)
+    tins (0.3.6)
+    wurfl-lite (1.1.2)
       amatch (>= 0.2.5)
       hpricot (>= 0.8.2, != 0.8.3)
-    wurfl-lite-middleware (1.0.5)
+    wurfl-lite-middleware (1.0.6)
       rack (>= 1.2.1)
-      wurfl-lite (>= 1.1.1)
+      wurfl-lite (>= 1.1.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   heroku
+  shotgun
   sinatra
   thin
   wurfl-lite-middleware
